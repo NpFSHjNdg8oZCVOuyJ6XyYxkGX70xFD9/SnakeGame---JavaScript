@@ -31,6 +31,19 @@ const changeDirection = (e) => {
         velocityX = -1;
         velocityY = 0;
     }
+    else if (e.key === "w" && velocityY !== 1) {
+        velocityX = 0;
+        velocityY = -1;
+    } else if (e.key === "s" && velocityY !== -1) {
+        velocityX = 0;
+        velocityY = 1;
+    } else if (e.key === "d" && velocityX !== -1) {
+        velocityX = 1;
+        velocityY = 0;
+    } else if (e.key === "a" && velocityX !== 1) {
+        velocityX = -1;
+        velocityY = 0;
+    }
 }
 
 // Function to display game over message and stop the game
